@@ -1,0 +1,70 @@
+.graphic {
+  padding: 50px 0;
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    span {
+      color: #381ddb;
+    }
+  }
+  &__description {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &__content {
+    img {
+      width: 100%;
+      padding: 0 15px;
+      cursor: pointer;
+    }
+  }
+  &_modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba($color: black, $alpha: 0.9);
+    &_img {
+      margin: auto;
+      display: block;
+      width: 80% !important;
+      min-width: 700px;
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation: zoom;
+      animation-duration: 0.6s;
+    }
+  }
+  &_close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    &:hover{
+      color:#bbb;
+      text-decoration: none;
+      cursor:pointer;
+    }
+  }
+}
+
+@-webkit-keyframes zoom {
+  from{-webkit-transform: scale(0);}
+  to{-webkit-transform: scale(1);}
+}
+
+@keyframes zoom {
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}

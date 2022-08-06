@@ -1,0 +1,17 @@
+.advantages {
+  padding: 50px 0;
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    span {
+      color:#381ddb;
+    }
+  }
+  &__item{
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+}

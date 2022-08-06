@@ -1,0 +1,54 @@
+.services {
+  min-height: 400px;
+  padding: 50px 0;
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    span {
+      color: #381DDB;
+    }
+  }
+  &__content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #381DDB;
+    color:#fff;
+    width: calc(33.333% - 40px);
+    margin: 20px;
+    &_img {
+      margin-bottom: 10px;
+      width: 40px;
+      height: 40px;
+    }
+    &_title {
+      font-weight: 700;
+    }
+    &_description {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 200%;
+    }
+  }
+}
+
+@media (max-width: 569px) {
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+    }
+    .header__logo_text {
+      text-align: center;
+    }
+    &__adress {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+}

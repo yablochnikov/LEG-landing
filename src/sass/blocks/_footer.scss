@@ -1,0 +1,33 @@
+.footer {
+  // background: rgb(255,255,255);
+  // background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.7643376039655021) 100%);
+  min-height: 100px;
+  .devider {
+    height: 1px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    background-color: #381DDB;
+  }
+  .header__logo {
+    color: black;
+  }
+  &__wrapper {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  &__phone {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    &:hover {
+      color: #381DDB;
+    }
+  }
+  &__address {
+    text-align: center;
+  }
+}

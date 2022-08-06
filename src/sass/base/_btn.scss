@@ -1,0 +1,17 @@
+.btn {
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 18px 33px;
+  box-shadow:1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
+  border-radius: 100px;
+  background-color: rgba(3, 0, 0, 0.0);
+  
+  font-weight: 800;
+  border: 2px solid #0000;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  &:hover {
+    color:#fff;
+  }
+}

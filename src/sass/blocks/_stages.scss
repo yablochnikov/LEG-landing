@@ -1,0 +1,54 @@
+.stages {
+  padding: 100px 0;
+  min-height: 620px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+    span {
+      color: #381DDB;
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__description {
+    text-align: center;
+  }
+  &__list {
+    font-weight: 500;
+    list-style-type: none;
+    padding: 0;
+    &_wrapper {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 50%;
+        object-position: center center;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+      .second {
+        margin-left: 20px;
+      }
+    }
+    &_item {
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+  &__submenu {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
